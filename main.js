@@ -5,7 +5,7 @@ import { setupCounter } from './counter.js'
 document.querySelector('#app').innerHTML = `
   <div class="h-screen relative">
 
-    <div class="fixed top-0 w-full h-[8vh] flex justify-between p-4 bg-slate-900">
+    <div class="fixed top-0 w-full h-[8vh] flex justify-between p-3 bg-slate-900">
 
       <div>
         <a href="" class="text-white text-lg font-semibold">Marcos Arellano</a>
@@ -31,7 +31,7 @@ document.querySelector('#app').innerHTML = `
       </div>
     </div>
 
-    <div class="h-[100vh] pt-28 bg-[url('/public/assets/images/bgfull.jpg')] bg-cover py-12 border-4">
+    <div class="h-[100vh] pt-28 bg-[url('/public/assets/images/bgfull.jpg')] bg-cover py-12">
 
       <div class="h-[70vh] w-[80vw] bg-slate-900 m-auto rounded-md justify-center flex-col">
 
@@ -74,9 +74,9 @@ document.querySelector('#app').innerHTML = `
     </div>
     
 
-    <div class="h-[92vh] bg-slate-900 px-4 border-4">
+    <div class="h-[92vh] bg-slate-900 px-4">
         
-      <div class="text-center py-2 h-[27vh] border">
+      <div class="text-center py-2 h-[27vh]">
         <h1 class="text-white text-4xl font-bold">Sobre mi</h1>
         <p class="text-white py-4 text-justify">
           Hola, soy Marcos Arellano. Soy bachiller en ingenieria mecatronica, he llevado algunos cursos full stack. Me gustaria crecer profesionalmente como desarrollador web
@@ -142,6 +142,9 @@ document.querySelector('#app').innerHTML = `
         
       </div>    
       
+    </div>
+
+    <div class="h-[92vh] bg-slate-900 px-4">
     </div>
 
 
