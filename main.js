@@ -1,6 +1,7 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
 import { setupCounter } from './counter.js'
+import fotopersonal from './public/assets/images/fotopersonal.jpg'
 
 document.querySelector('#app').innerHTML = `
   <div class="h-screen relative">
@@ -37,7 +38,7 @@ document.querySelector('#app').innerHTML = `
 
         <div class="h-[60vh] py-2 w-full border">
           <div class="py-3 px-3">
-            <img src="./public/assets/images/fotopersonal.jpg" alt="" class="h-[40vh] aspect-square m-auto rounded-full border-4">
+            <img src="${fotopersonal}" alt="" class="h-[40vh] aspect-square m-auto rounded-full border-4">
           </div>
           
           <div class="text-center py-2">
