@@ -36,7 +36,7 @@ document.querySelector('#app').innerHTML = `
 
       <div class="h-[70vh] w-[80vw] bg-slate-900 m-auto rounded-md justify-center flex-col">
 
-        <div class="h-[60vh] py-2 w-full border">
+        <div class="h-[60vh] py-2 w-full">
           <div class="py-3 px-3">
             <img src="${fotopersonal}" alt="" class="h-[40vh] aspect-square m-auto rounded-full border-4">
           </div>
@@ -48,7 +48,7 @@ document.querySelector('#app').innerHTML = `
 
         </div>
         
-        <div class="h-[10vh] border flex justify-center gap-3 py-3">
+        <div class="h-[10vh] flex justify-center gap-3 py-3">
           <div class="px-2 py-1">
             <svg class="fill-white" xmlns="http://www.w3.org/2000/svg" height="1.5em" viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg>
             
@@ -146,6 +146,41 @@ document.querySelector('#app').innerHTML = `
     </div>
 
     <div class="h-[92vh] bg-slate-900 px-4">
+
+      <div class="text-center py-2 h-[10vh]">
+        <h1 class="text-white text-4xl font-bold">Curriculum</h1>
+      </div>
+
+      <div class="text-center h-[80vh]">
+
+        <div class="py-2 h-[30vh] w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
+          <div class="pr-2 relative">
+            <h2 class="text-lg font-semibold">Bachiller</h2>
+            <h3 class="text-emerald-300">Universidad Nacional de Piura</h3>
+            <h4 class="text-sm text-emerald-300">2016-2022</h4>
+            <p>
+              Bachiller en ingeniero mecatronica con diplomados en desarrollo web full stack, que me proporcionan el conocimiento necesario para poder desarrollarme profesionalmente en el are de desarrollo web            
+            </p>
+
+            <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[49%] h-2 rounded-2xl">
+          </div>
+          
+          
+        </div>
+
+        <div class="py-2 h-[20vh] w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
+          <div class="pr-2 relative">
+            <h2 class="text-lg font-semibold">Desarrollo de aplicaciones con PHP 7.0, Laravel y PostgreSQL</h2>
+            <h3 class="text-emerald-300">CETI</h3>
+            <h4 class="text-sm text-emerald-300">2022-2023</h4>
+
+            <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
+          </div>
+        
+      </div>
+
     </div>
 
 
