@@ -4,9 +4,9 @@ import { setupCounter } from './counter.js'
 import fotopersonal from './public/assets/images/fotopersonal.jpg'
 
 document.querySelector('#app').innerHTML = `
-  <div class="h-screen relative">
+  <div class="h-screen relative bg-slate-900">
 
-    <div class="fixed top-0 w-full h-[8vh] flex justify-between p-3 bg-slate-900">
+    <div class="fixed top-0 w-full h-[8vh] z-10 flex justify-between p-3 bg-slate-900">
 
       <div>
         <a href="" class="text-white text-lg font-semibold">Marcos Arellano</a>
@@ -32,13 +32,13 @@ document.querySelector('#app').innerHTML = `
       </div>
     </div>
 
-    <div class="h-[100vh] pt-28 bg-[url('/public/assets/images/bgfull.jpg')] bg-cover py-12">
+    <div class="h-[100vh] pt-20 bg-[url('/public/assets/images/bgfull.jpg')] bg-cover py-12">
 
-      <div class="h-[70vh] w-[80vw] bg-slate-900 m-auto rounded-md justify-center flex-col">
+      <div class="h-[80vh] w-[90vw] bg-slate-900 m-auto rounded-md justify-center flex-col">
 
-        <div class="h-[60vh] py-2 w-full">
+        <div class="h-[70vh] py-2 w-full">
           <div class="p-3">
-            <img src="${fotopersonal}" alt="" class="h-[40vh] aspect-square m-auto rounded-[100%] border-4">
+            <img src="${fotopersonal}" alt="" class="h-[50vh] w-[100vw] aspect-square m-auto rounded-[100%] border-4">
           </div>
           
           <div class="text-center py-2">
@@ -84,7 +84,7 @@ document.querySelector('#app').innerHTML = `
         </p>
       </div>
 
-      <div class="h-[65vh]">
+      <div class="h-[65vh] bg-slate-900">
         <h2 class="text-white text-xl font-semibold">
           Datos personales
         </h2>
@@ -102,13 +102,13 @@ document.querySelector('#app').innerHTML = `
           <p>Peruano</p>
         </div>
 
-        <div>
+        <div class="">
 
           <h2 class="text-white text-xl font-semibold">
             Mis intereses
           </h2>
 
-          <div class="grid grid-cols-3 gap-2 py-2 text-white">
+          <div class="grid grid-cols-3 gap-2 py-2 text-white bg-slate-900">
 
             <div class="h-[10vh] bg-black w-[20vw] m-auto border rounded-md py-2 my-2">
               <svg xmlns="http://www.w3.org/2000/svg" class="fill-white m-auto" height="2em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M528.3 46.5H388.5c-48.1 0-89.9 33.3-100.4 80.3-10.6-47-52.3-80.3-100.4-80.3H48c-26.5 0-48 21.5-48 48v245.8c0 26.5 21.5 48 48 48h89.7c102.2 0 132.7 24.4 147.3 75 .7 2.8 5.2 2.8 6 0 14.7-50.6 45.2-75 147.3-75H528c26.5 0 48-21.5 48-48V94.6c0-26.4-21.3-47.9-47.7-48.1zM242 311.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5V289c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5V251zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm259.3 121.7c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5V228c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.8c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5V190z"/></svg>
@@ -145,17 +145,189 @@ document.querySelector('#app').innerHTML = `
       
     </div>
 
+
     <div class="bg-slate-900 px-4">
 
-      <div class="text-center py-2 h-[8vh]">
+      <div class="text-center py-2 h-[6vh]">
+        <h1 class="text-white text-4xl font-bold">Habilidades</h1>
+      </div>
+      
+      <div class="text-white py-2">
+        <h2 class="text-2xl py-2 text-center font-semibold">Habilidades tecnicas</h2>
+
+        <div class="pb-2">
+          <p class="font-semibold">HTML</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 90%">
+            80%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">CSS</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 80%">
+            70%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">Tailwind</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 80%">
+            70%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">JavaScript</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 50%">
+            50%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">React</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 60%">
+            60%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">Angular</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 40%">
+            40%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">Laravel</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 50%">
+            50%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">PHP</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 50%">
+            50%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">My SQL</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 40%">
+            40%
+            </div>
+          </div>
+        </div>
+
+        
+        
+      </div>
+
+      <div class="text-white bg-slate-900">
+        <h2 class="text-2xl py-2 text-center">Habilidades personales</h2>
+
+        <div class="pb-2">
+          <p class="font-semibold">Responsable</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 100%">
+            100%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">Respetuoso</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 100%">
+            100%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">Creativo</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 90%">
+            90%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">Empatico</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 70%">
+            70%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">Buscar soluciones</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 100%">
+            100%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">Trabajo en equipo</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 90%">
+            90%
+            </div>
+          </div>
+        </div>
+
+        <div class="py-2">
+          <p class="font-semibold">Persistente</p>
+          <div class="w-full bg-gray-200 rounded-full dark:bg-gray-700">
+            <div class="bg-emerald-300 text-xs font-medium text-white text-center p-0.5 leading-none rounded-full" style="width: 90%">
+            90%
+            </div>
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+      
+
+    </div>
+
+
+
+    <div class="bg-slate-900 px-4">
+
+      <div class="text-center py-2 h-[6vh]">
         <h1 class="text-white text-4xl font-bold">Curriculum</h1>
       </div>
 
-      <div class="text-center text-white">
+      <div class="text-white py-2">
 
-        <h2 class="text-2xl py-2">Educación</h2>
+        <h2 class="text-2xl py-2 text-center font-semibold">Educación</h2>
 
-        <div class="py-2   w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
+        <div class="pb-2 w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
           <div class="pr-2 relative">
             <h2 class="text-lg font-semibold">Bachiller</h2>
             <h3 class="text-emerald-300">Universidad Nacional de Piura</h3>
@@ -219,19 +391,15 @@ document.querySelector('#app').innerHTML = `
 
       </div>
 
+      <div class="text-white py-2">
 
-      <div class="text-center text-white py-2">
+        <h2 class="text-2xl py-2 text-center font-semibold">Experiencia Laboral</h2>
 
-        <h2 class="text-2xl py-2">Experiencia Laboral</h2>
-
-        <div class="py-2   w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
+        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
           <div class="pr-2 relative">
-            <h2 class="text-lg font-semibold">Bachiller</h2>
-            <h3 class="text-emerald-300">Universidad Nacional de Piura</h3>
-            <h4 class="text-sm text-emerald-300">2016-2022</h4>
-            <p class="">
-              Bachiller en ingeniero mecatronica con diplomados en desarrollo web full stack, que me proporcionan el conocimiento necesario para poder desarrollarme profesionalmente en el area de desarrollo web            
-            </p>
+            <h2 class="text-lg font-semibold">Trabunda SAC</h2>
+            <h3 class="text-emerald-300">Auxiliar de TI</h3>
+            <h4 class="text-sm text-emerald-300">2022-2022</h4>
 
             <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
             <hr class="bg-emerald-300 absolute -right-10 px-1 top-[49%] h-2 rounded-2xl">
@@ -240,26 +408,30 @@ document.querySelector('#app').innerHTML = `
           
         </div>
 
-        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
+        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
           <div class="pr-2 relative">
-            <h2 class="text-lg font-semibold">Desarrollo de aplicaciones con PHP 7.0, Laravel y PostgreSQL</h2>
-            <h3 class="text-emerald-300">CETI</h3>
+            <h2 class="text-lg font-semibold">Proanco SRL</h2>
+            <h3 class="text-emerald-300">Asistente de TI</h3>
             <h4 class="text-sm text-emerald-300">2022-2023</h4>
 
             <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
-            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[49%] h-2 rounded-2xl">
           </div>
+          
+          
         </div>
 
-        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
+        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
           <div class="pr-2 relative">
-            <h2 class="text-lg font-semibold">Desarrollo well full stack Angular & visual .Net core</h2>
-            <h3 class="text-emerald-300">CETI</h3>
+            <h2 class="text-lg font-semibold">Promigas Perú SA</h2>
+            <h3 class="text-emerald-300">Practicante profesional de operaciones</h3>
             <h4 class="text-sm text-emerald-300">2023-2023</h4>
 
             <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
-            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[49%] h-2 rounded-2xl">
           </div>
+          
+          
         </div>
 
 
@@ -268,6 +440,9 @@ document.querySelector('#app').innerHTML = `
 
     </div>
 
+    <div>
+    
+    </div>
 
 
   </div>
