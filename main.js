@@ -37,7 +37,7 @@ document.querySelector('#app').innerHTML = `
       <div class="h-[70vh] w-[80vw] bg-slate-900 m-auto rounded-md justify-center flex-col">
 
         <div class="h-[60vh] py-2 w-full">
-          <div class="py-3 px-3">
+          <div class="p-3">
             <img src="${fotopersonal}" alt="" class="h-[40vh] aspect-square m-auto rounded-[100%] border-4">
           </div>
           
@@ -145,21 +145,23 @@ document.querySelector('#app').innerHTML = `
       
     </div>
 
-    <div class="h-[92vh] bg-slate-900 px-4">
+    <div class="bg-slate-900 px-4">
 
-      <div class="text-center py-2 h-[10vh]">
+      <div class="text-center py-2 h-[8vh]">
         <h1 class="text-white text-4xl font-bold">Curriculum</h1>
       </div>
 
-      <div class="text-center h-[80vh]">
+      <div class="text-center text-white">
 
-        <div class="py-2 h-[30vh] w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
+        <h2 class="text-2xl py-2">Educación</h2>
+
+        <div class="py-2   w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
           <div class="pr-2 relative">
             <h2 class="text-lg font-semibold">Bachiller</h2>
             <h3 class="text-emerald-300">Universidad Nacional de Piura</h3>
             <h4 class="text-sm text-emerald-300">2016-2022</h4>
-            <p>
-              Bachiller en ingeniero mecatronica con diplomados en desarrollo web full stack, que me proporcionan el conocimiento necesario para poder desarrollarme profesionalmente en el are de desarrollo web            
+            <p class="">
+              Bachiller en ingeniero mecatronica con diplomados en desarrollo web full stack, que me proporcionan el conocimiento necesario para poder desarrollarme profesionalmente en el area de desarrollo web            
             </p>
 
             <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
@@ -169,7 +171,7 @@ document.querySelector('#app').innerHTML = `
           
         </div>
 
-        <div class="py-2 h-[20vh] w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
+        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
           <div class="pr-2 relative">
             <h2 class="text-lg font-semibold">Desarrollo de aplicaciones con PHP 7.0, Laravel y PostgreSQL</h2>
             <h3 class="text-emerald-300">CETI</h3>
@@ -178,7 +180,90 @@ document.querySelector('#app').innerHTML = `
             <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
             <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
           </div>
-        
+        </div>
+
+        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
+          <div class="pr-2 relative">
+            <h2 class="text-lg font-semibold">Desarrollo well full stack Angular & visual .Net core</h2>
+            <h3 class="text-emerald-300">CETI</h3>
+            <h4 class="text-sm text-emerald-300">2023-2023</h4>
+
+            <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
+          </div>
+        </div>
+
+        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
+          <div class="pr-2 relative">
+            <h2 class="text-lg font-semibold">Desarrollo web - FrontEnd</h2>
+            <h3 class="text-emerald-300">TECSUP</h3>
+            <h4 class="text-sm text-emerald-300">2023-2023</h4>
+
+            <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
+          </div>
+        </div>
+
+        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
+          <div class="pr-2 relative">
+            <h2 class="text-lg font-semibold">Desarrollo web - BackEnd</h2>
+            <h3 class="text-emerald-300">TECSUP</h3>
+            <h4 class="text-sm text-emerald-300">2023-Actualmente</h4>
+
+            <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
+          </div>
+        </div>
+
+
+
+      </div>
+
+
+      <div class="text-center text-white py-2">
+
+        <h2 class="text-2xl py-2">Experiencia Laboral</h2>
+
+        <div class="py-2   w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
+          <div class="pr-2 relative">
+            <h2 class="text-lg font-semibold">Bachiller</h2>
+            <h3 class="text-emerald-300">Universidad Nacional de Piura</h3>
+            <h4 class="text-sm text-emerald-300">2016-2022</h4>
+            <p class="">
+              Bachiller en ingeniero mecatronica con diplomados en desarrollo web full stack, que me proporcionan el conocimiento necesario para poder desarrollarme profesionalmente en el area de desarrollo web            
+            </p>
+
+            <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[49%] h-2 rounded-2xl">
+          </div>
+          
+          
+        </div>
+
+        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
+          <div class="pr-2 relative">
+            <h2 class="text-lg font-semibold">Desarrollo de aplicaciones con PHP 7.0, Laravel y PostgreSQL</h2>
+            <h3 class="text-emerald-300">CETI</h3>
+            <h4 class="text-sm text-emerald-300">2022-2023</h4>
+
+            <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
+          </div>
+        </div>
+
+        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
+          <div class="pr-2 relative">
+            <h2 class="text-lg font-semibold">Desarrollo well full stack Angular & visual .Net core</h2>
+            <h3 class="text-emerald-300">CETI</h3>
+            <h4 class="text-sm text-emerald-300">2023-2023</h4>
+
+            <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
+          </div>
+        </div>
+
+
+
       </div>
 
     </div>
