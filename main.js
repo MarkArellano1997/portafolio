@@ -38,7 +38,7 @@ document.querySelector('#app').innerHTML = `
 
         <div class="h-[60vh] py-2 w-full">
           <div class="py-3 px-3">
-            <img src="${fotopersonal}" alt="" class="h-[40vh] aspect-square m-auto rounded-full border-4">
+            <img src="${fotopersonal}" alt="" class="h-[40vh] aspect-square m-auto rounded-[100%] border-4">
           </div>
           
           <div class="text-center py-2">
