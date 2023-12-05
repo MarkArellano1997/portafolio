@@ -1,6 +1,6 @@
 import './style.css'
 import javascriptLogo from './javascript.svg'
-import { setupCounter } from './counter.js'
+import { openMenu } from './menu'
 import fotopersonal from './public/assets/images/fotopersonal.jpg'
 
 document.querySelector('#app').innerHTML = `
@@ -12,27 +12,31 @@ document.querySelector('#app').innerHTML = `
         <a href="" class="text-white text-lg font-semibold">Marcos Arellano</a>
       </div>
 
-      <div>
-        <div class="bg-white rounded">
+      <div >
+        <div class="bg-white rounded" id="buttonMenu">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
           <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
           </svg> 
         </div>
-        <div class="hidden">
-          <ul class="">
-            <li>Inicio</li>
-            <li>Sobre Mi</li>
-            <li>Skill</li>
-            <li>Curriculum</li>
-            <li>Portafolio</li>
-            <li>Contacto</li>
-          </ul>
-        </div>
         
       </div>
+
+      
     </div>
 
-    <div class="h-[100vh] pt-20 bg-[url('/public/assets/images/bgfull.jpg')] bg-cover py-12">
+    <div id="menu" class="bg-slate-800 text-white absolute pt-14 right-0 p-4 hidden">
+        <ul class="uppercase font-semibold">
+          <li>Inicio</li>
+          <li>Sobre Mi</li>
+          <li>Skill</li>
+          <li>Curriculum</li>
+          <li>Portafolio</li>
+          <li>Contacto</li>
+        </ul>
+    </div>
+
+    <div class="h-[100vh] pt-20 bg-[url('/public/assets/images/bgfull.jpg')] bg-cover">
+      
 
       <div class="h-[80vh] w-[90vw] bg-slate-900 m-auto rounded-md justify-center flex-col">
 
@@ -327,8 +331,8 @@ document.querySelector('#app').innerHTML = `
 
         <h2 class="text-2xl py-2 text-center font-semibold">Educación</h2>
 
-        <div class="pb-2 w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
-          <div class="pr-2 relative">
+        <div class="pb-2 w-[80vw] bg-slate-800 border-r-4 border-r-emerald-300 text-justify">
+          <div class="pr-2 relative p-2">
             <h2 class="text-lg font-semibold">Bachiller</h2>
             <h3 class="text-emerald-300">Universidad Nacional de Piura</h3>
             <h4 class="text-sm text-emerald-300">2016-2022</h4>
@@ -343,8 +347,8 @@ document.querySelector('#app').innerHTML = `
           
         </div>
 
-        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
-          <div class="pr-2 relative">
+        <div class="w-[80vw] border-r-4 bg-slate-800 border-r-emerald-300 text-white text-justify my-4">
+          <div class="pr-2 p-2 relative">
             <h2 class="text-lg font-semibold">Desarrollo de aplicaciones con PHP 7.0, Laravel y PostgreSQL</h2>
             <h3 class="text-emerald-300">CETI</h3>
             <h4 class="text-sm text-emerald-300">2022-2023</h4>
@@ -354,8 +358,8 @@ document.querySelector('#app').innerHTML = `
           </div>
         </div>
 
-        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
-          <div class="pr-2 relative">
+        <div class="w-[80vw] border-r-4 bg-slate-800 border-r-emerald-300 text-white text-justify my-4">
+          <div class="pr-2 p-2 relative">
             <h2 class="text-lg font-semibold">Desarrollo well full stack Angular & visual .Net core</h2>
             <h3 class="text-emerald-300">CETI</h3>
             <h4 class="text-sm text-emerald-300">2023-2023</h4>
@@ -365,8 +369,8 @@ document.querySelector('#app').innerHTML = `
           </div>
         </div>
 
-        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
-          <div class="pr-2 relative">
+        <div class="w-[80vw] border-r-4 bg-slate-800 border-r-emerald-300 text-white text-justify my-4">
+          <div class="pr-2 p-2 relative">
             <h2 class="text-lg font-semibold">Desarrollo web - FrontEnd</h2>
             <h3 class="text-emerald-300">TECSUP</h3>
             <h4 class="text-sm text-emerald-300">2023-2023</h4>
@@ -376,8 +380,8 @@ document.querySelector('#app').innerHTML = `
           </div>
         </div>
 
-        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-white text-justify border">
-          <div class="pr-2 relative">
+        <div class="w-[80vw] border-r-4 bg-slate-800 border-r-emerald-300 text-white text-justify my-4">
+          <div class="pr-2 p-2 relative">
             <h2 class="text-lg font-semibold">Desarrollo web - BackEnd</h2>
             <h3 class="text-emerald-300">TECSUP</h3>
             <h4 class="text-sm text-emerald-300">2023-Actualmente</h4>
@@ -393,42 +397,42 @@ document.querySelector('#app').innerHTML = `
 
       <div class="text-white py-2">
 
-        <h2 class="text-2xl py-2 text-center font-semibold">Experiencia Laboral</h2>
+        <h2 class="text-2xl py-2 text-center  font-semibold">Experiencia Laboral</h2>
 
-        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
-          <div class="pr-2 relative">
+        <div class="w-[80vw] border-r-4 border-r-emerald-300 bg-slate-800 text-justify my-4">
+          <div class="pr-2 p-2 relative">
             <h2 class="text-lg font-semibold">Trabunda SAC</h2>
             <h3 class="text-emerald-300">Auxiliar de TI</h3>
             <h4 class="text-sm text-emerald-300">2022-2022</h4>
 
             <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
-            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[49%] h-2 rounded-2xl">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
           </div>
           
           
         </div>
 
-        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
-          <div class="pr-2 relative">
+        <div class="w-[80vw] border-r-4 bg-slate-800 border-r-emerald-300 text-justify my-4">
+          <div class="pr-2 p-2 relative">
             <h2 class="text-lg font-semibold">Proanco SRL</h2>
             <h3 class="text-emerald-300">Asistente de TI</h3>
             <h4 class="text-sm text-emerald-300">2022-2023</h4>
 
             <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
-            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[49%] h-2 rounded-2xl">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
           </div>
           
           
         </div>
 
-        <div class="py-2 w-[80vw] border-r-4 border-r-emerald-300 text-justify border">
-          <div class="pr-2 relative">
+        <div class="w-[80vw] border-r-4 bg-slate-800 border-r-emerald-300 text-justify my-4">
+          <div class="pr-2 p-2 relative">
             <h2 class="text-lg font-semibold">Promigas Perú SA</h2>
             <h3 class="text-emerald-300">Practicante profesional de operaciones</h3>
             <h4 class="text-sm text-emerald-300">2023-2023</h4>
 
             <hr class="bg-emerald-300 absolute -right-9 px-4 top-1/2 h-1">
-            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[49%] h-2 rounded-2xl">
+            <hr class="bg-emerald-300 absolute -right-10 px-1 top-[48%] h-2 rounded-2xl">
           </div>
           
           
@@ -440,12 +444,16 @@ document.querySelector('#app').innerHTML = `
 
     </div>
 
-    <div>
-    
+    <div class="h-[92vh] bg-slate-900 px-4">
+      <div class="text-center py-2 h-[6vh]">
+        <h1 class="text-white text-4xl font-bold">Portafolio</h1>
+      </div>
+
+      
     </div>
 
 
   </div>
 `
 
-setupCounter(document.querySelector('#counter'))
+openMenu(document.querySelector('#menu'))
